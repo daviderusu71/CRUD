@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Complect despre Persoană</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestionare Persoane</h1>
+
+    <!-- Formular pentru adăugare/actualizare -->
+    <form id="personForm">
+        <input type="text" id="firstName" placeholder="Prenume" required>
+        <input type="text" id="lastName" placeholder="Nume" required>
+        <input type="text" id="family" placeholder="Familie" required>
+        <input type="text" id="address" placeholder="Adresă" required>
+        <input type="text" id="postalCode" placeholder="Cod Poștal" required>
+        <input type="tel" id="phone" placeholder="Telefon" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="date" id="birthDate" placeholder="Data Nașterii" required>
+        <input type="file" id="image" accept="image/*">
+        <button type="submit">Adaugă Persoană</button>
+    </form>
+
+    <!-- Lista de persoane -->
+    <ul id="personList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
